@@ -1,0 +1,19 @@
+{
+	"name": "LS_SQLTABLE",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqlserverbhathu899.database.windows.net;Initial Catalog=azuresqltestdata899;User ID=bhathu899",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLPWD"
+			}
+		}
+	}
+}
